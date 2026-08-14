@@ -1,6 +1,5 @@
 from ultralytics import YOLO
-import tkinter as tk
-from tkinter import filedialog, messagebox
+
 
 model = YOLO("runs/detect/train-4/weights/best.pt")
 
