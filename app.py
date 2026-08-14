@@ -1,7 +1,7 @@
+import streamlit as st
 from ultralytics import YOLO
-
-
-model = YOLO("runs/detect/train-4/weights/best.pt")
+import cv2
+model = YOLO("yolo11n.pt")
 
 def select_image():
     file = filedialog.askopenfilename(
